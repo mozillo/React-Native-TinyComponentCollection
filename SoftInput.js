@@ -42,9 +42,9 @@ export default class SoftInput extends Component {
 		    	listener.remove();
 		});
 	}
-  /*
-    this.props.scroll: Scroll method with scrollview : (offset) => { this.refs.scrollView.scrollTo(offset) }
-  */
+	/*
+	* this.props.scroll(offset) => { this.refs.scrollView.scrollTo(offset) }
+	*/
 	onFocus() {
 		const { scroll } = this.props;
 		this.textInput.measure((ox, oy, width, height, px, py) => {
